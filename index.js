@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
   res.status(200).send("hello");
 });
 
-app.listen(8800, () => {
+const PORT = process.env.PORT || 5001;
+
+app.listen(PORT, () => {
   console.log("server is running");
 });
