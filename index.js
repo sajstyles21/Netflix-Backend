@@ -29,7 +29,7 @@ app.use("/api/movies", movieRoute);
 app.use("/api/lists", listRoute);
 
 app.get("/", (req, res) => {
-  res.status(200).send("hello");
+  res.status(200).send("Welcome to Netflix");
 });
 
 const PORT = process.env.PORT || 5001;
